@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f7f3ee;
+    color: #2f2a25;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+.app-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 24px 16px;
+}
+
+.page {
+    width: 100%;
+    max-width: 430px;
+}
+
+.card {
+    background: #fffaf4;
+    border: 1px solid #eadfd3;
+    border-radius: 28px;
+    padding: 26px 22px;
+    box-shadow: 0 12px 30px rgba(80, 60, 40, 0.08);
+    margin-bottom: 16px;
+}
+
+.hero-card {
+    padding: 30px 24px;
+}
+
+.center {
+    text-align: center;
+}
+
+.eyebrow {
+    margin: 0 0 16px;
+    color: #8a6f5a;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+h1 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.25;
+    letter-spacing: -0.04em;
+}
+
+h2 {
+    margin: 0 0 12px;
+    font-size: 19px;
+    line-height: 1.35;
+}
+
+.description {
+    margin: 16px 0 0;
+    color: #6f6258;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.button-group,
+.bottom-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.primary-button,
+.secondary-button,
+.danger-button,
+.text-button {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 16px;
+    padding: 15px 18px;
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center;
+    cursor: pointer;
+}
+
+.primary-button {
+    background: #4d3f35;
+    color: #ffffff;
+}
+
+.secondary-button {
+    background: #efe7de;
+    color: #4d3f35;
+}
+
+.danger-button {
+    background: #f4d9d4;
+    color: #8a3024;
+}
+
+.text-button {
+    background: transparent;
+    color: #8a6f5a;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.page-header h1 {
+    font-size: 24px;
+}
+
+.back-link {
+    width: 38px;
+    height: 38px;
+    border-radius: 14px;
+    background: #efe7de;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.guide-list {
+    margin: 0;
+    padding-left: 20px;
+    color: #6f6258;
+    line-height: 1.8;
+}
+
+.footer-links {
+    margin: 24px 0 8px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    color: #8a6f5a;
+    font-size: 14px;
+}
+
+.form-card {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+input[type="date"],
+textarea {
+    width: 100%;
+    border: 1px solid #dfd2c5;
+    border-radius: 16px;
+    background: #fff;
+    padding: 14px 15px;
+    color: #2f2a25;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    line-height: 1.6;
+}
+
+input[type="date"]:focus,
+textarea:focus {
+    border-color: #8a6f5a;
+}
+
+.emotion-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.emotion-grid label {
+    margin: 0;
+    padding: 12px 12px;
+    border-radius: 14px;
+    background: #f3ece4;
+    color: #4d3f35;
+    font-weight: 700;
+}
+
+.error-message {
+    margin: 8px 0 0;
+    color: #b83b2e;
+    font-size: 14px;
+}
+
+.record-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.record-card {
+    display: block;
+    background: #fffaf4;
+    border: 1px solid #eadfd3;
+    border-radius: 22px;
+    padding: 18px;
+    box-shadow: 0 8px 24px rgba(80, 60, 40, 0.06);
+}
+
+.record-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.emotion-badge {
+    display: inline-block;
+    border-radius: 999px;
+    background: #efe7de;
+    color: #4d3f35;
+    padding: 7px 11px;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.record-date,
+.meta-text {
+    color: #8a6f5a;
+    font-size: 13px;
+    margin: 0;
+}
+
+.record-title {
+    margin: 0 0 8px;
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 1.45;
+}
+
+.record-preview {
+    margin: 0;
+    color: #6f6258;
+    line-height: 1.6;
+}
+
+.detail-card .emotion-badge {
+    margin: 12px 0 10px;
+}
+
+.detail-block {
+    margin-top: 22px;
+}
+
+.detail-block p {
+    margin: 0;
+    color: #5f554d;
+    line-height: 1.7;
+    white-space: pre-wrap;
+}
+
+.empty-state {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
