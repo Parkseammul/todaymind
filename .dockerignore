@@ -1,7 +1,23 @@
-.gradle
-build
-.idea
+# Gradle
+.gradle/
+build/
+
+# Gradle Wrapper는 GitHub에 올려야 함
+!gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ
+.idea/
 *.iml
-out
-target
-.git
+*.iws
+*.ipr
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build outputs
+out/
+target/
