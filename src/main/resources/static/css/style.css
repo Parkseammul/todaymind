@@ -4,8 +4,8 @@
 
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: #f7f3ee;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f7efe7;
     color: #2f2a25;
 }
 
@@ -16,7 +16,8 @@ a {
 
 button,
 input,
-textarea {
+textarea,
+select {
     font: inherit;
 }
 
@@ -25,106 +26,97 @@ textarea {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    padding: 24px 16px;
 }
 
 .page {
     width: 100%;
-    max-width: 430px;
+    max-width: 520px;
+    padding: 24px 18px 48px;
 }
 
-.card {
+.card,
+.form-card {
     background: #fffaf4;
     border: 1px solid #eadfd3;
     border-radius: 28px;
-    padding: 26px 22px;
-    box-shadow: 0 12px 30px rgba(80, 60, 40, 0.08);
-    margin-bottom: 16px;
+    padding: 24px;
+    box-shadow: 0 12px 30px rgba(62, 42, 25, 0.08);
 }
 
 .hero-card {
-    padding: 30px 24px;
-}
-
-.center {
-    text-align: center;
+    margin-top: 20px;
 }
 
 .eyebrow {
-    margin: 0 0 16px;
+    margin: 0 0 12px;
     color: #8a6f5a;
     font-size: 14px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 h1 {
     margin: 0;
-    font-size: 30px;
-    line-height: 1.25;
+    font-size: 34px;
+    line-height: 1.22;
     letter-spacing: -0.04em;
 }
 
 h2 {
     margin: 0 0 12px;
-    font-size: 19px;
-    line-height: 1.35;
+    font-size: 21px;
+    letter-spacing: -0.03em;
 }
 
 .description {
-    margin: 16px 0 0;
-    color: #6f6258;
-    font-size: 16px;
+    color: #6f6257;
     line-height: 1.7;
 }
 
-.button-group,
-.bottom-actions {
+.button-group {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    margin-top: 24px;
+    gap: 10px;
+    margin-top: 22px;
 }
 
 .primary-button,
 .secondary-button,
 .danger-button,
 .text-button {
-    display: block;
     width: 100%;
     border: none;
-    border-radius: 16px;
-    padding: 15px 18px;
-    font-size: 16px;
-    font-weight: 800;
+    border-radius: 18px;
+    padding: 15px 16px;
     text-align: center;
     cursor: pointer;
+    font-weight: 700;
 }
 
 .primary-button {
-    background: #4d3f35;
-    color: #ffffff;
+    background: #2f2a25;
+    color: white;
 }
 
 .secondary-button {
-    background: #efe7de;
-    color: #4d3f35;
+    background: #efe3d6;
+    color: #2f2a25;
 }
 
 .danger-button {
-    background: #f4d9d4;
-    color: #8a3024;
+    background: #f2d7d5;
+    color: #9b2f2a;
 }
 
 .text-button {
     background: transparent;
-    color: #8a6f5a;
+    color: #7a6554;
 }
 
 .page-header {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 18px;
+    margin-bottom: 22px;
 }
 
 .page-header h1 {
@@ -132,47 +124,60 @@ h2 {
 }
 
 .back-link {
-    width: 38px;
-    height: 38px;
-    border-radius: 14px;
-    background: #efe7de;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #efe3d6;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 .guide-list {
-    margin: 0;
     padding-left: 20px;
-    color: #6f6258;
-    line-height: 1.8;
+    line-height: 1.9;
+    color: #5e5147;
 }
 
 .footer-links {
-    margin: 24px 0 8px;
     display: flex;
     justify-content: center;
     gap: 8px;
+    margin-top: 24px;
     color: #8a6f5a;
+    font-size: 14px;
+}
+
+.notice-box {
+    background: #efe3d6;
+    color: #5e5147;
+    padding: 14px 16px;
+    border-radius: 18px;
+    margin-bottom: 18px;
+    line-height: 1.6;
     font-size: 14px;
 }
 
 .form-card {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 18px;
 }
 
-.form-field label {
-    display: block;
-    margin-bottom: 10px;
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
     font-weight: 800;
-    line-height: 1.4;
 }
 
-input[type="date"],
-textarea {
+textarea,
+select,
+input {
     width: 100%;
     border: 1px solid #dfd2c5;
     border-radius: 16px;
@@ -183,105 +188,75 @@ textarea {
 }
 
 textarea {
+    min-height: 96px;
     resize: vertical;
-    line-height: 1.6;
 }
 
-input[type="date"]:focus,
-textarea:focus {
+textarea:focus,
+select:focus,
+input:focus {
     border-color: #8a6f5a;
 }
 
-.emotion-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
-
-.emotion-grid label {
-    margin: 0;
-    padding: 12px 12px;
-    border-radius: 14px;
-    background: #f3ece4;
-    color: #4d3f35;
+.error-message {
+    margin: 4px 0 0;
+    color: #b44038;
+    font-size: 14px;
     font-weight: 700;
 }
 
-.error-message {
-    margin: 8px 0 0;
-    color: #b83b2e;
-    font-size: 14px;
-}
-
-.record-list {
+.thought-list {
     display: flex;
     flex-direction: column;
     gap: 14px;
+    margin-top: 18px;
 }
 
-.record-card {
+.thought-card {
     display: block;
     background: #fffaf4;
     border: 1px solid #eadfd3;
     border-radius: 22px;
     padding: 18px;
-    box-shadow: 0 8px 24px rgba(80, 60, 40, 0.06);
 }
 
-.record-card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 10px;
-}
-
-.emotion-badge {
-    display: inline-block;
-    border-radius: 999px;
-    background: #efe7de;
-    color: #4d3f35;
-    padding: 7px 11px;
-    font-size: 13px;
+.thought-card-title {
+    margin: 0 0 8px;
     font-weight: 800;
+    font-size: 17px;
 }
 
-.record-date,
-.meta-text {
+.thought-card-meta {
     color: #8a6f5a;
     font-size: 13px;
-    margin: 0;
+    font-weight: 700;
 }
 
-.record-title {
-    margin: 0 0 8px;
-    font-size: 17px;
-    font-weight: 900;
-    line-height: 1.45;
-}
-
-.record-preview {
-    margin: 0;
-    color: #6f6258;
+.thought-card-preview {
+    color: #6f6257;
     line-height: 1.6;
 }
 
-.detail-card .emotion-badge {
-    margin: 12px 0 10px;
+.detail-card {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 
-.detail-block {
-    margin-top: 22px;
+.detail-item h2 {
+    font-size: 15px;
+    color: #8a6f5a;
+    margin-bottom: 6px;
 }
 
-.detail-block p {
+.detail-item p {
     margin: 0;
-    color: #5f554d;
+    color: #3a322b;
     line-height: 1.7;
-    white-space: pre-wrap;
 }
 
 .empty-state {
+    margin-top: 18px;
     text-align: center;
 }
 

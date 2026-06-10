@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생각 정리하기 - 오늘마음</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="app-container">
+    <main class="page">
+        <header class="page-header">
+            <a class="back-link" href="/">←</a>
+            <h1>생각 정리하기</h1>
+        </header>
+
+        <section class="notice-box">
+            현재 기록은 이 브라우저에만 저장돼요.
+        </section>
+
+        <form id="thoughtForm" class="form-card">
+            <div class="form-field">
+                <label for="situation">1. 무슨 일이 있었나요?</label>
+                <textarea id="situation" placeholder="상황을 짧게 적어보세요."></textarea>
+            </div>
+
+            <div class="form-field">
+                <label for="emotion">2. 어떤 감정이 들었나요?</label>
+                <select id="emotion">
+                    <option value="">감정을 선택해주세요</option>
+                    <option value="불안">불안</option>
+                    <option value="속상함">속상함</option>
+                    <option value="화남">화남</option>
+                    <option value="외로움">외로움</option>
+                    <option value="기쁨">기쁨</option>
+                    <option value="복잡함">복잡함</option>
+                    <option value="기타">기타</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label for="thought">3. 머릿속에 떠오른 생각은 무엇인가요?</label>
+                <textarea id="thought" placeholder="떠오른 생각을 그대로 적어보세요."></textarea>
+            </div>
+
+            <div class="form-field">
+                <label for="fact">4. 실제로 확인된 사실은 무엇인가요?</label>
+                <textarea id="fact" placeholder="확인된 사실만 적어보세요."></textarea>
+            </div>
+
+            <div class="form-field">
+                <label for="action">5. 지금 할 수 있는 작은 행동은 무엇인가요?</label>
+                <textarea id="action" placeholder="지금 할 수 있는 작은 행동을 적어보세요."></textarea>
+            </div>
+
+            <button class="primary-button" type="submit">정리 완료하기</button>
+            <p id="formError" class="error-message"></p>
+        </form>
+    </main>
+</div>
+
+<script src="/js/storage.js"></script>
+<script src="/js/thought-form.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정리한 생각들 - 오늘마음</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="app-container">
+    <main class="page">
+        <header class="page-header">
+            <a class="back-link" href="/">←</a>
+            <h1>정리한 생각들</h1>
+        </header>
+
+        <section class="notice-box">
+            현재 기록은 이 브라우저에만 저장돼요.
+        </section>
+
+        <div class="button-group top-actions">
+            <a class="primary-button" href="/thoughts/new">새로 정리하기</a>
+            <button id="deleteAllButton" class="danger-button" type="button">전체 삭제</button>
+        </div>
+
+        <section id="thoughtList" class="thought-list"></section>
+
+        <section id="emptyState" class="card empty-state hidden">
+            <h2>아직 정리한 생각이 없어요.</h2>
+            <p class="description">지금 떠오르는 생각을 짧게 꺼내보세요.</p>
+            <a class="primary-button" href="/thoughts/new">생각 정리하기</a>
+        </section>
+    </main>
+</div>
+
+<script src="/js/storage.js"></script>
+<script src="/js/thought-list.js"></script>
+</body>
+</html>

@@ -19,10 +19,27 @@ repositories {
 }
 
 dependencies {
+    // View / Web
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-webmvc'
+
+    // Security
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+
+    // JPA / DB
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly 'com.h2database:h2'
+
+    // Validation
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    // Thymeleaf Security
+    implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
+
+    // Test
     testImplementation 'org.springframework.boot:spring-boot-starter-thymeleaf-test'
     testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
+    testImplementation 'org.springframework.security:spring-security-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 

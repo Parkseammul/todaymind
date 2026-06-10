@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생각 상세 - 오늘마음</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="app-container">
+    <main class="page">
+        <header class="page-header">
+            <a class="back-link" href="/thoughts">←</a>
+            <h1>생각 상세</h1>
+        </header>
+
+        <section id="detailArea" class="card detail-card"></section>
+
+        <div class="button-group">
+            <a id="editLink" class="primary-button" href="#">수정하기</a>
+            <button id="deleteButton" class="danger-button" type="button">삭제하기</button>
+            <a class="secondary-button" href="/thoughts">목록으로</a>
+        </div>
+    </main>
+</div>
+
+<script src="/js/storage.js"></script>
+<script src="/js/thought-detail.js"></script>
+</body>
+</html>

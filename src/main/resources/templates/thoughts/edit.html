@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생각 수정 - 오늘마음</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="app-container">
+    <main class="page">
+        <header class="page-header">
+            <a id="backLink" class="back-link" href="/thoughts">←</a>
+            <h1>생각 수정</h1>
+        </header>
+
+        <form id="editForm" class="form-card">
+            <div class="form-field">
+                <label for="situation">1. 무슨 일이 있었나요?</label>
+                <textarea id="situation"></textarea>
+            </div>
+
+            <div class="form-field">
+                <label for="emotion">2. 어떤 감정이 들었나요?</label>
+                <select id="emotion">
+                    <option value="">감정을 선택해주세요</option>
+                    <option value="불안">불안</option>
+                    <option value="속상함">속상함</option>
+                    <option value="화남">화남</option>
+                    <option value="외로움">외로움</option>
+                    <option value="기쁨">기쁨</option>
+                    <option value="복잡함">복잡함</option>
+                    <option value="기타">기타</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label for="thought">3. 머릿속에 떠오른 생각은 무엇인가요?</label>
+                <textarea id="thought"></textarea>
+            </div>
+
+            <div class="form-field">
+                <label for="fact">4. 실제로 확인된 사실은 무엇인가요?</label>
+                <textarea id="fact"></textarea>
+            </div>
+
+            <div class="form-field">
+                <label for="action">5. 지금 할 수 있는 작은 행동은 무엇인가요?</label>
+                <textarea id="action"></textarea>
+            </div>
+
+            <button class="primary-button" type="submit">수정 완료하기</button>
+            <p id="formError" class="error-message"></p>
+        </form>
+    </main>
+</div>
+
+<script src="/js/storage.js"></script>
+<script src="/js/thought-edit.js"></script>
+</body>
+</html>
